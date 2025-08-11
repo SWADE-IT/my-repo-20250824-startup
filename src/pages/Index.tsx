@@ -55,12 +55,12 @@ const Index = () => {
           aria-hidden
         />
         <div className="container mx-auto px-4 py-20 grid gap-10 lg:grid-cols-2 lg:items-center relative">
-          <div>
+          <div className="rounded-2xl bg-background/70 backdrop-blur-sm ring-1 ring-border shadow-[var(--shadow-elegant)] p-6">
             <p className="text-sm text-muted-foreground mb-2">{t("common.slogan")}</p>
-            <h1 id="hero-heading" className="text-4xl md:text-5xl font-bold tracking-tight text-primary-foreground">
+            <h1 id="hero-heading" className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
               {t("home.hero.title")}
             </h1>
-            <p className="mt-4 text-primary-foreground/90 text-lg max-w-prose">
+            <p className="mt-4 text-foreground/90 text-lg max-w-prose">
               {t("home.hero.subtitle")}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
@@ -71,13 +71,16 @@ const Index = () => {
                 <Link to="/services">{t("common.cta.learnMore")}</Link>
               </Button>
             </div>
-            <div className="mt-8 flex gap-4 text-primary-foreground/80">
-              <span className="text-sm border border-white/20 rounded-full px-3 py-1">{t("home.highlights.fast")}</span>
-              <span className="text-sm border border-white/20 rounded-full px-3 py-1">{t("home.highlights.budget")}</span>
-              <span className="text-sm border border-white/20 rounded-full px-3 py-1">{t("home.highlights.local")}</span>
+            <div className="mt-8 flex gap-4 text-muted-foreground">
+              <span className="text-sm border border-foreground/20 rounded-full px-3 py-1">{t("home.highlights.fast")}</span>
+              <span className="text-sm border border-foreground/20 rounded-full px-3 py-1">{t("home.highlights.budget")}</span>
+              <span className="text-sm border border-foreground/20 rounded-full px-3 py-1">{t("home.highlights.local")}</span>
             </div>
           </div>
           <div className="relative">
+            <div className="absolute left-3 top-3 z-10 rounded-md bg-background/70 backdrop-blur px-3 py-1 text-sm font-semibold tracking-tight shadow-[var(--shadow-elegant)] ring-1 ring-border">
+              SWADE IT
+            </div>
             <img
               src={heroImg}
               alt="Abstract Auckland skyline with Sky Tower and global tech network in silver/gray/black — SWADE IT"
