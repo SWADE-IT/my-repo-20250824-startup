@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
-import heroImg from "@/assets/hero-swadetit.jpg";
+import heroImg from "@/assets/hero-auckland-tech.jpg";
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import { useI18n, useT } from "@/i18n/LanguageContext";
@@ -80,7 +80,7 @@ const Index = () => {
           <div className="relative">
             <img
               src={heroImg}
-              alt="SWADE IT hero image showing modern technology theme for Auckland IT services"
+              alt="Abstract Auckland skyline with Sky Tower and global tech network in silver/gray/black — SWADE IT"
               className="w-full rounded-lg shadow-xl"
               loading="eager"
             />
