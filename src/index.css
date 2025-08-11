@@ -53,6 +53,23 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Brand extensions */
+    --brand: 224 76% 55%;
+    --brand-glow: 224 76% 70%;
+
+    /* Gradients & motion tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--brand)) 0%, hsl(var(--primary)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--card)) 100%);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Shadows */
+    --shadow-elegant: 0 20px 40px -20px hsl(var(--brand) / 0.3);
+    --shadow-glow: 0 0 50px hsl(var(--brand-glow) / 0.35);
+
+    /* Hero background stops */
+    --hero-from: 230 80% 12%;
+    --hero-to: 260 70% 18%;
   }
 
   .dark {
@@ -100,6 +117,6 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
 }
