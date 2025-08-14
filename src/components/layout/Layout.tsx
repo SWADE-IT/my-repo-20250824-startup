@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground bg-tech-ripples">
+    <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
       <main id="main" className="flex-1">
         {children}

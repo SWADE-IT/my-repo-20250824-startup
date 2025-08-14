@@ -30,10 +30,8 @@ const Contact = () => {
         </script>
       </Helmet>
       <section className="container mx-auto px-4 py-16" aria-labelledby="contact-heading">
-        <div className="rounded-xl bg-card/80 backdrop-blur-sm ring-1 ring-border shadow-sm p-6 max-w-3xl">
-          <h1 id="contact-heading" className="text-3xl font-bold tracking-tight mb-2">{t("contact.title")}</h1>
-          <p className="text-muted-foreground">{t("contact.intro")}</p>
-        </div>
+        <h1 id="contact-heading" className="text-3xl font-bold tracking-tight mb-6">{t("contact.title")}</h1>
+        <p className="text-muted-foreground max-w-2xl">{t("contact.intro")}</p>
         <div className="mt-8 grid gap-8 md:grid-cols-3">
           <div className="rounded-lg border p-6 bg-card shadow-sm">
             <h2 className="font-semibold mb-2">{t("contact.whatsapp")}</h2>
