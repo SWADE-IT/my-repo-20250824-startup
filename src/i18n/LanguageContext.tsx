@@ -38,15 +38,15 @@ const translations: Record<Language, Translations> = {
       servicesTitle: "IT Services — Office 365, VPN, Email, Home WiFi & CCTV | SWADE IT",
       servicesDesc:
         "Office IT services and residential support: 365 deployment, Outlook, VPN, networks, WiFi, CCTV.",
-      contactTitle: "Contact SWADE IT — WhatsApp, WeChat, Call 022 685 2866",
+      contactTitle: "Contact SWADE IT — WhatsApp, WeChat, Call 029 04 561 561",
       contactDesc:
-        "Reach SWADE IT in Auckland via WhatsApp, WeChat or call 022 685 2866 for fast IT support.",
+        "Reach SWADE IT in Auckland via WhatsApp, WeChat or call 029 04 561 561 for fast IT support.",
     },
     home: {
       hero: {
         title: "Auckland small business & home IT support",
         subtitle:
-          "Office 365 deployment, VPN for working anywhere, Outlook troubleshooting, and reliable home network fixes.",
+          "Office 365 deployment, VPN for working anywhere, network troubleshooting, and reliable home solutions.",
       },
       highlights: {
         fast: "Fast & friendly",
@@ -57,34 +57,50 @@ const translations: Record<Language, Translations> = {
     about: {
       title: "About SWADE IT",
       body:
-        "We are a team with over 10 years' experience supporting small businesses and residential customers' urgent IT issues. Based in Auckland, we focus on serving small businesses without a dedicated IT headcount, and residential clients who don't want to wait weeks for their broadband provider or pay too much for a single technician visit. We're on your side and at hand — providing timely service within your budget.",
+        "We are a team with over 10 years experience in supporting small businesses and residential customers' IT issues, base in Auckland and focus on severing Auckland region communities' IT needs. No matter you are just a two staffs small business which have no budget for a dedicated IT headcount so that light on cost and annual expenditure, or you are just a residential customer and suddenly having internet issues but don't want to wait for too long from your broadband provider or the onsite fee quote from your ISP over your budget. In the economic downturn, we are trying to create more job opportunities by providing crucial IT services that communities need and helping businesses grow with better systems and efficiency. We are in your side and in handy, fixing the tech headaches and within your budget.",
     },
     services: {
       title: "Services",
       officeTitle: "Office IT Services",
       officeList: [
         "New employee computer setup",
-        "Office 365 deployment",
-        "Outlook email troubleshooting",
-        "Work-from-anywhere VPN creation & remote access setup",
-        "Office network troubleshooting",
+        "Microsoft 365 Deployment",
+        "VPN remote work access setup", 
+        "NAS and Private Cloud establishment",
+        "Uninterruptible Power Supply"
+      ],
+      officeDetails: [
+        "You got a new employee and want to set up a computer for the employee?",
+        "You want Office 365 deployment like Outlook email, Teams and group cloud drive?",
+        "You want yourself or your staff to be able to work from home or from anywhere securely access your office resource via VPN secure tunnel?",
+        "You don't want to use public cloud drive but want to build your own private storage or office shared drive with modern NAS and data protection? Or even with Geo-redundancy remotely backup the data everyday to a different place?",
+        "You want a UPS to keep your important IT devices be protected from sudden power outage or just want the office internet still on even if a power outage happen?"
       ],
       homeTitle: "Personal & Residential Services",
       homeList: [
-        "Home internet connection rescue",
-        "Wi‑Fi coverage & stability troubleshooting",
-        "Home security CCTV installation",
+        "Internet connection troubleshooting",
+        "WiFi range extension", 
+        "NAS for private photos and videos automatic backup",
+        "CCTV and home security alarm system solution"
       ],
+      homeDetails: [
+        "You switched to a new broadband service but having trouble to get the internet connection?",
+        "Your home WiFi connection is not stable or WiFi signal is too weak in some areas?",
+        "You don't trust cloud storage and want to have your precious files, photos and videos automatically backup to your private drive like a NAS at home with disk redundancy? Or even building your own media with easy mobile access?",
+        "You have concern about the worsening public security and want install home security CCTV and alarm system?"
+      ],
+      summary: "We do all those brain heavy lifting work for you - network troubleshooting, VPN creation and remote access setup, Microsoft Office 365 office software deployment, just contact us now."
     },
     contact: {
       title: "Contact",
       intro:
-        "Scan the QR codes or call us directly. We're ready to help.",
-      phone: "Mobile",
+        "We might be busy on the line when you calling, so please use either WhatsApp or WeChat leave a message to us with your case details so that we can get the 1st available domain expert look into your case and respond you in the most effective way.",
+      phone: "029 04 561 561",
+      email: "swade.it@outlook.com",
       whatsapp: "WhatsApp",
       wechat: "WeChat",
       note:
-        "QR codes shown are placeholders — replace with your own to enable scanning.",
+        "Scan QR codes or call us directly for fast IT support.",
     },
   },
   zh: {
