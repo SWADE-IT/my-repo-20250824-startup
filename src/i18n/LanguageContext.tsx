@@ -106,7 +106,7 @@ const translations: Record<Language, Translations> = {
   zh: {
     common: {
       businessName: "SWADE IT",
-      slogan: "IT 即生活",
+      slogan: "IT Is Life",
       cta: {
         contact: "获取支持",
         learnMore: "了解更多",
