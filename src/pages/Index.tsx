@@ -58,28 +58,28 @@ const Index = () => {
       {/* Hero Section */}
       <section
         ref={heroRef}
-        className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-background"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero"
         aria-labelledby="hero-heading"
       >
         {/* Content Container */}
-        <div className="relative z-10 container mx-auto px-6 py-20">
-          <div className="max-w-5xl mx-auto text-center">
-            <div className="space-y-8">
-              <div className="space-y-6">
-                <p className="text-lg text-muted-foreground font-medium">
+        <div className="relative z-10 container-premium section-spacing">
+          <div className="max-w-6xl mx-auto text-center">
+            <div className="space-y-12">
+              <div className="space-y-8">
+                <p className="text-lg text-muted-foreground font-light tracking-wide uppercase">
                   {t("common.slogan")}
                 </p>
-                <h1 id="hero-heading" className="text-5xl md:text-7xl font-bold text-foreground leading-tight tracking-tight">
+                <h1 id="hero-heading" className="text-foreground leading-none">
                   {t("home.hero.title")}
                 </h1>
-                <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
                   {t("home.hero.subtitle")}
                 </p>
               </div>
               
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" asChild>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Button size="lg" variant="premium" asChild>
                   <Link to="/contact">{t("common.cta.contact")}</Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
@@ -88,15 +88,15 @@ const Index = () => {
               </div>
               
               {/* Highlights */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-                <div className="p-6 rounded-lg border border-border bg-card">
-                  <div className="font-medium text-foreground">{t("home.highlights.fast")}</div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+                <div className="p-8 bg-card border border-border shadow-premium">
+                  <div className="font-medium text-foreground text-lg">{t("home.highlights.fast")}</div>
                 </div>
-                <div className="p-6 rounded-lg border border-border bg-card">
-                  <div className="font-medium text-foreground">{t("home.highlights.budget")}</div>
+                <div className="p-8 bg-card border border-border shadow-premium">
+                  <div className="font-medium text-foreground text-lg">{t("home.highlights.budget")}</div>
                 </div>
-                <div className="p-6 rounded-lg border border-border bg-card">
-                  <div className="font-medium text-foreground">{t("home.highlights.local")}</div>
+                <div className="p-8 bg-card border border-border shadow-premium">
+                  <div className="font-medium text-foreground text-lg">{t("home.highlights.local")}</div>
                 </div>
               </div>
             </div>
@@ -105,46 +105,46 @@ const Index = () => {
       </section>
 
       {/* Services Overview */}
-      <section className="py-20 bg-background" aria-labelledby="services-overview">
-        <div className="container mx-auto px-6">
+      <section className="section-spacing bg-gradient-surface" aria-labelledby="services-overview">
+        <div className="container-premium">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 id="services-overview" className="text-4xl font-bold text-foreground mb-4">
+            <div className="text-center mb-20">
+              <h2 id="services-overview" className="mb-6 text-foreground">
                 Our Services
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Comprehensive IT solutions for your business and home
               </p>
             </div>
             
             <div className="grid gap-12 md:grid-cols-2">
-              <div className="p-8 rounded-lg border border-border bg-card">
-                <h3 className="text-2xl font-semibold mb-6 text-foreground">{t("services.officeTitle")}</h3>
-                <ul className="space-y-4">
+              <div className="p-10 bg-card border border-border shadow-card">
+                <h3 className="text-2xl font-medium mb-8 text-foreground">{t("services.officeTitle")}</h3>
+                <ul className="space-y-6">
                   {officeList.map((item, index) => (
                     <li key={index} className="flex items-start">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 mr-4 flex-shrink-0" />
-                      <span className="text-muted-foreground">{item}</span>
+                      <div className="w-2 h-2 rounded-full bg-primary mt-3 mr-6 flex-shrink-0" />
+                      <span className="text-muted-foreground leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
               
-              <div className="p-8 rounded-lg border border-border bg-card">
-                <h3 className="text-2xl font-semibold mb-6 text-foreground">{t("services.homeTitle")}</h3>
-                <ul className="space-y-4">
+              <div className="p-10 bg-card border border-border shadow-card">
+                <h3 className="text-2xl font-medium mb-8 text-foreground">{t("services.homeTitle")}</h3>
+                <ul className="space-y-6">
                   {homeList.map((item, index) => (
                     <li key={index} className="flex items-start">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 mr-4 flex-shrink-0" />
-                      <span className="text-muted-foreground">{item}</span>
+                      <div className="w-2 h-2 rounded-full bg-primary mt-3 mr-6 flex-shrink-0" />
+                      <span className="text-muted-foreground leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
             
-            <div className="text-center mt-12">
-              <Button size="lg" asChild>
+            <div className="text-center mt-16">
+              <Button size="lg" variant="outline" asChild>
                 <Link to="/services">View All Services</Link>
               </Button>
             </div>

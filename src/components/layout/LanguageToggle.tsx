@@ -6,14 +6,14 @@ const LanguageToggle = () => {
   return (
     <div className="flex items-center gap-2" aria-label="Language selector">
       <Button
-        variant={lang === "en" ? "hero" : "outline"}
+        variant={lang === "en" ? "default" : "outline"}
         size="sm"
         onClick={() => setLang("en")}
       >
         EN
       </Button>
       <Button
-        variant={lang === "zh" ? "hero" : "outline"}
+        variant={lang === "zh" ? "default" : "outline"}
         size="sm"
         onClick={() => setLang("zh")}
       >
