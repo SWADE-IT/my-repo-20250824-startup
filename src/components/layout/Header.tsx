@@ -9,7 +9,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/95 border-b border-border">
       <nav className="container mx-auto flex h-14 items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-3" aria-label="SWADE IT"> 
-          <img src={swadeLogo} alt="SWADE IT Logo" className="h-8 w-auto" />
+          <img src="/lovable-uploads/31d1ca4d-93b5-4a86-b8a7-a1382f37622f.png" alt="SWADE IT Logo" className="h-8 w-auto" />
         </Link>
         <div className="flex items-center gap-8">
           <NavLink to="/" className={({isActive}) => `text-sm font-medium transition-colors hover:text-foreground ${isActive ? 'text-foreground' : 'text-muted-foreground'}`}>{t("nav.home")}</NavLink>
