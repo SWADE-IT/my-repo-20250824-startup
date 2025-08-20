@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useI18n } from "@/i18n/LanguageContext";
 import heroImage from "@/assets/hero-auckland-skyline.jpg";
-import swadeLogo from "@/assets/swade-it-logo-main.png";
+import swadeLogo from "@/assets/swade-it-logo.png";
 
 const Index = () => {
   const heroRef = useRef<HTMLElement>(null);
@@ -64,25 +64,6 @@ const Index = () => {
         {/* Content Container */}
         <div className="relative z-10 container-premium section-spacing">
           <div className="max-w-6xl mx-auto text-center">
-            {/* SWADE IT Brand Section */}
-            <div className="mb-16">
-              <div className="flex flex-col items-center gap-8">
-                <img src={swadeLogo} alt="SWADE IT Logo" className="h-24 w-auto" />
-                <div className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight" 
-                     style={{ 
-                       background: 'linear-gradient(135deg, #D4AF37, #FFD700, #B8860B)', 
-                       WebkitBackgroundClip: 'text',
-                       WebkitTextFillColor: 'transparent',
-                       backgroundClip: 'text'
-                     }}>
-                  SWADE IT
-                </div>
-                <div className="text-2xl md:text-3xl font-light tracking-widest text-primary/80">
-                  IT IS LIFE
-                </div>
-              </div>
-            </div>
-            
             <div className="space-y-12">
               <div className="space-y-8">
                 <p className="text-lg text-muted-foreground font-light tracking-wide uppercase">
