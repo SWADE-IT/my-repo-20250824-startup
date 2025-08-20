@@ -14,10 +14,10 @@ import homeSecurity from "@/assets/service-home-security.png";
 
 const Services = () => {
   const { t, tv } = useI18n();
-  const officeList: string[] = tv("services.officeList") as string[];
-  const homeList: string[] = tv("services.homeList") as string[];
-  const officeDetails: string[] = tv("services.officeDetails") as string[];
-  const homeDetails: string[] = tv("services.homeDetails") as string[];
+  const officeList: string[] = tv("services.officeList") as string[] || [];
+  const homeList: string[] = tv("services.homeList") as string[] || [];
+  const officeDetails: string[] = tv("services.officeDetails") as string[] || [];
+  const homeDetails: string[] = tv("services.homeDetails") as string[] || [];
   const canonical = typeof window !== 'undefined' ? window.location.origin + '/services' : '/services';
 
   const officeImages = [computerSetup, microsoft365, vpnSetup, nasCloud, upsPower];
