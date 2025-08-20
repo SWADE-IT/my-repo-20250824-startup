@@ -15,7 +15,7 @@ const LanguageToggle = () => {
       onClick={toggleLanguage}
       aria-label="Toggle language"
     >
-      {lang === "en" ? "English" : "中文"}
+      {lang === "en" ? "中文" : "English"}
     </Button>
   );
 };
