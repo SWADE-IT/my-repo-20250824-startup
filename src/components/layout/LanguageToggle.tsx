@@ -3,23 +3,20 @@ import { useI18n } from "@/i18n/LanguageContext";
 
 const LanguageToggle = () => {
   const { lang, setLang } = useI18n();
+  
+  const toggleLanguage = () => {
+    setLang(lang === "en" ? "zh" : "en");
+  };
+
   return (
-    <div className="flex items-center gap-2" aria-label="Language selector">
-      <Button
-        variant={lang === "en" ? "default" : "outline"}
-        size="sm"
-        onClick={() => setLang("en")}
-      >
-        EN
-      </Button>
-      <Button
-        variant={lang === "zh" ? "default" : "outline"}
-        size="sm"
-        onClick={() => setLang("zh")}
-      >
-        中文
-      </Button>
-    </div>
+    <Button
+      variant="outline"
+      size="sm"
+      onClick={toggleLanguage}
+      aria-label="Toggle language"
+    >
+      {lang === "en" ? "English" : "中文"}
+    </Button>
   );
 };
 
