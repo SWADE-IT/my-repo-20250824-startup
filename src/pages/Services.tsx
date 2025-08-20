@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useI18n } from "@/i18n/LanguageContext";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import computerSetup from "@/assets/service-computer-setup.png";
 import microsoft365 from "@/assets/service-microsoft-365.png";
 import vpnSetup from "@/assets/service-vpn-setup.png";
@@ -45,78 +47,74 @@ const Services = () => {
         </script>
       </Helmet>
       
-      <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
-        <section className="container mx-auto px-4 py-16" aria-labelledby="services-heading">
+      <div className="min-h-screen bg-background">
+        <section className="container mx-auto px-6 py-20" aria-labelledby="services-heading">
           <div className="max-w-6xl mx-auto">
-            <div className="bg-card rounded-2xl p-8 md:p-12 shadow-[var(--shadow-card)] border border-border/50 mb-12">
-              <h1 id="services-heading" className="text-4xl md:text-5xl font-bold tracking-tight mb-8 text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <div className="text-center mb-16">
+              <h1 id="services-heading" className="text-5xl font-bold tracking-tight mb-6 text-foreground">
                 {t("services.title")}
               </h1>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Professional IT solutions designed for Auckland businesses and residents
+              </p>
             </div>
 
             {/* Office IT Services */}
-            <div className="mb-16">
-              <div className="bg-card rounded-2xl p-8 md:p-12 shadow-[var(--shadow-card)] border border-border/50">
-                <h2 className="text-3xl font-bold mb-8 text-primary text-center">{t("services.officeTitle")}</h2>
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                  {officeList.map((item, index) => (
-                    <article key={item} className="bg-gradient-card rounded-xl p-6 shadow-[var(--shadow-depth)] border border-border/30 hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:scale-105">
-                      <div className="flex flex-col items-center text-center">
-                        <div className="mb-4 p-4 bg-muted/50 rounded-xl">
-                          <img 
-                            src={officeImages[index]} 
-                            alt={`${item} service icon`}
-                            className="w-16 h-16 object-contain"
-                          />
-                        </div>
-                        <h3 className="text-lg font-semibold mb-3 text-primary">{item}</h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                          {officeDetails[index]}
-                        </p>
+            <div className="mb-20">
+              <h2 className="text-3xl font-bold mb-12 text-foreground">{t("services.officeTitle")}</h2>
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                {officeList.map((item, index) => (
+                  <article key={item} className="p-6 rounded-lg border border-border bg-card hover:border-primary/50 transition-colors">
+                    <div className="flex flex-col items-center text-center">
+                      <div className="mb-6 p-4 bg-muted rounded-lg">
+                        <img 
+                          src={officeImages[index]} 
+                          alt={`${item} service icon`}
+                          className="w-16 h-16 object-contain"
+                        />
                       </div>
-                    </article>
-                  ))}
-                </div>
+                      <h3 className="text-lg font-semibold mb-4 text-foreground">{item}</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {officeDetails[index]}
+                      </p>
+                    </div>
+                  </article>
+                ))}
               </div>
             </div>
 
             {/* Personal & Residential Services */}
-            <div className="mb-16">
-              <div className="bg-card rounded-2xl p-8 md:p-12 shadow-[var(--shadow-card)] border border-border/50">
-                <h2 className="text-3xl font-bold mb-8 text-primary text-center">{t("services.homeTitle")}</h2>
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-                  {homeList.map((item, index) => (
-                    <article key={item} className="bg-gradient-card rounded-xl p-6 shadow-[var(--shadow-depth)] border border-border/30 hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:scale-105">
-                      <div className="flex flex-col items-center text-center">
-                        <div className="mb-4 p-4 bg-muted/50 rounded-xl">
-                          <img 
-                            src={homeImages[index]} 
-                            alt={`${item} service icon`}
-                            className="w-16 h-16 object-contain"
-                          />
-                        </div>
-                        <h3 className="text-lg font-semibold mb-3 text-primary">{item}</h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                          {homeDetails[index]}
-                        </p>
+            <div className="mb-20">
+              <h2 className="text-3xl font-bold mb-12 text-foreground">{t("services.homeTitle")}</h2>
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                {homeList.map((item, index) => (
+                  <article key={item} className="p-6 rounded-lg border border-border bg-card hover:border-primary/50 transition-colors">
+                    <div className="flex flex-col items-center text-center">
+                      <div className="mb-6 p-4 bg-muted rounded-lg">
+                        <img 
+                          src={homeImages[index]} 
+                          alt={`${item} service icon`}
+                          className="w-16 h-16 object-contain"
+                        />
                       </div>
-                    </article>
-                  ))}
-                </div>
+                      <h3 className="text-lg font-semibold mb-4 text-foreground">{item}</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {homeDetails[index]}
+                      </p>
+                    </div>
+                  </article>
+                ))}
               </div>
             </div>
 
             {/* Call to Action */}
-            <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 md:p-12 border border-accent/20 text-center">
-              <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
+            <div className="text-center p-12 rounded-lg border border-border bg-card">
+              <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
                 {t("services.summary")}
               </p>
-              <a 
-                href="/contact" 
-                className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[hsl(var(--golden))] to-[hsl(45_100%_45%)] hover:from-[hsl(45_100%_45%)] hover:to-[hsl(var(--golden))] text-black font-semibold rounded-lg shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105 text-lg"
-              >
-                Contact Us Now
-              </a>
+              <Button size="lg" asChild>
+                <Link to="/contact">Contact Us Now</Link>
+              </Button>
             </div>
           </div>
         </section>

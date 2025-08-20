@@ -58,71 +58,45 @@ const Index = () => {
       {/* Hero Section */}
       <section
         ref={heroRef}
-        className="relative min-h-[90vh] flex items-center justify-center overflow-hidden"
-        style={{
-          background: `var(--gradient-hero), url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundBlendMode: 'overlay'
-        }}
+        className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-background"
         aria-labelledby="hero-heading"
       >
-        {/* Radial gradient overlay */}
-        <div 
-          className="absolute inset-0 opacity-40"
-          style={{
-            background: `radial-gradient(600px circle at var(--x, 50%) var(--y, 50%), hsl(var(--golden) / 0.15), transparent 40%)`
-          }}
-        />
-        
-        {/* Logo Overlay */}
-        <div className="absolute top-8 left-8 z-10">
-          <img 
-            src={swadeLogo} 
-            alt="SWADE IT Logo" 
-            className="h-16 w-auto drop-shadow-xl"
-          />
-        </div>
-        
         {/* Content Container */}
-        <div className="relative z-10 container mx-auto px-4 py-16">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Professional card background for content */}
-            <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/10 shadow-[var(--shadow-elegant)]">
-              <p className="text-lg md:text-xl text-white/90 mb-4 font-medium">
-                {t("common.slogan")}
-              </p>
-              <h1 id="hero-heading" className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
-                <span className="bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent drop-shadow-lg" style={{
-                  textShadow: 'var(--text-shadow-3d)'
-                }}>
+        <div className="relative z-10 container mx-auto px-6 py-20">
+          <div className="max-w-5xl mx-auto text-center">
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <p className="text-lg text-muted-foreground font-medium">
+                  {t("common.slogan")}
+                </p>
+                <h1 id="hero-heading" className="text-5xl md:text-7xl font-bold text-foreground leading-tight tracking-tight">
                   {t("home.hero.title")}
-                </span>
-              </h1>
-              <p className="text-xl md:text-2xl text-white/80 mb-12 leading-relaxed max-w-3xl mx-auto">
-                {t("home.hero.subtitle")}
-              </p>
+                </h1>
+                <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                  {t("home.hero.subtitle")}
+                </p>
+              </div>
               
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-[hsl(var(--golden))] to-[hsl(45_100%_45%)] hover:from-[hsl(45_100%_45%)] hover:to-[hsl(var(--golden))] text-black font-semibold shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105" asChild>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" asChild>
                   <Link to="/contact">{t("common.cta.contact")}</Link>
                 </Button>
-                <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm" asChild>
+                <Button variant="outline" size="lg" asChild>
                   <Link to="/services">{t("common.cta.learnMore")}</Link>
                 </Button>
               </div>
               
               {/* Highlights */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                  <div className="font-semibold text-white text-lg">{t("home.highlights.fast")}</div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+                <div className="p-6 rounded-lg border border-border bg-card">
+                  <div className="font-medium text-foreground">{t("home.highlights.fast")}</div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                  <div className="font-semibold text-white text-lg">{t("home.highlights.budget")}</div>
+                <div className="p-6 rounded-lg border border-border bg-card">
+                  <div className="font-medium text-foreground">{t("home.highlights.budget")}</div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                  <div className="font-semibold text-white text-lg">{t("home.highlights.local")}</div>
+                <div className="p-6 rounded-lg border border-border bg-card">
+                  <div className="font-medium text-foreground">{t("home.highlights.local")}</div>
                 </div>
               </div>
             </div>
@@ -131,42 +105,48 @@ const Index = () => {
       </section>
 
       {/* Services Overview */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-background to-muted/20" aria-labelledby="services-overview">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-card rounded-2xl p-8 md:p-12 shadow-[var(--shadow-card)] border border-border/50">
-              <h2 id="services-overview" className="text-3xl md:text-4xl font-bold text-center mb-12">
+      <section className="py-20 bg-background" aria-labelledby="services-overview">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 id="services-overview" className="text-4xl font-bold text-foreground mb-4">
                 Our Services
               </h2>
-              <div className="grid gap-8 md:grid-cols-2">
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-primary">{t("services.officeTitle")}</h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    {officeList.map((item, index) => (
-                      <li key={index} className="flex items-start">
-                        <div className="w-2 h-2 rounded-full bg-accent mt-2 mr-3 flex-shrink-0" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-primary">{t("services.homeTitle")}</h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    {homeList.map((item, index) => (
-                      <li key={index} className="flex items-start">
-                        <div className="w-2 h-2 rounded-full bg-accent mt-2 mr-3 flex-shrink-0" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              <p className="text-xl text-muted-foreground">
+                Comprehensive IT solutions for your business and home
+              </p>
+            </div>
+            
+            <div className="grid gap-12 md:grid-cols-2">
+              <div className="p-8 rounded-lg border border-border bg-card">
+                <h3 className="text-2xl font-semibold mb-6 text-foreground">{t("services.officeTitle")}</h3>
+                <ul className="space-y-4">
+                  {officeList.map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 mr-4 flex-shrink-0" />
+                      <span className="text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div className="text-center mt-8">
-                <Button asChild className="bg-gradient-to-r from-[hsl(var(--golden))] to-[hsl(45_100%_45%)] hover:from-[hsl(45_100%_45%)] hover:to-[hsl(var(--golden))] text-black font-semibold">
-                  <Link to="/services">View All Services</Link>
-                </Button>
+              
+              <div className="p-8 rounded-lg border border-border bg-card">
+                <h3 className="text-2xl font-semibold mb-6 text-foreground">{t("services.homeTitle")}</h3>
+                <ul className="space-y-4">
+                  {homeList.map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 mr-4 flex-shrink-0" />
+                      <span className="text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
+            </div>
+            
+            <div className="text-center mt-12">
+              <Button size="lg" asChild>
+                <Link to="/services">View All Services</Link>
+              </Button>
             </div>
           </div>
         </div>
