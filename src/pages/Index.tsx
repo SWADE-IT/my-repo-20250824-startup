@@ -5,34 +5,29 @@ import { Helmet } from "react-helmet-async";
 import { useI18n } from "@/i18n/LanguageContext";
 import heroImage from "@/assets/hero-auckland-skyline.jpg";
 import swadeLogo from "@/assets/swade-it-logo.png";
-
 const Index = () => {
   const heroRef = useRef<HTMLElement>(null);
-  const { t, tv } = useI18n();
-
+  const {
+    t,
+    tv
+  } = useI18n();
   useEffect(() => {
     const hero = heroRef.current;
     if (!hero) return;
-
     const handleMouseMove = (e: MouseEvent) => {
       const rect = hero.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 100;
-      const y = ((e.clientY - rect.top) / rect.height) * 100;
-      
+      const x = (e.clientX - rect.left) / rect.width * 100;
+      const y = (e.clientY - rect.top) / rect.height * 100;
       hero.style.setProperty('--x', `${x}%`);
       hero.style.setProperty('--y', `${y}%`);
     };
-
     hero.addEventListener('mousemove', handleMouseMove);
     return () => hero.removeEventListener('mousemove', handleMouseMove);
   }, []);
-
   const canonical = typeof window !== 'undefined' ? window.location.origin : '/';
   const officeList: string[] = tv("services.officeList") as string[];
   const homeList: string[] = tv("services.homeList") as string[];
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>{t("seo.homeTitle")}</title>
         <meta name="description" content={t("seo.homeDesc")} />
@@ -43,24 +38,20 @@ const Index = () => {
         <meta property="og:url" content={canonical} />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: t("common.businessName"),
-            description: t("seo.homeDesc"),
-            areaServed: "Auckland",
-            url: typeof window !== 'undefined' ? window.location.origin : undefined,
-            telephone: "029 04 561 561",
-            email: "swade.it@outlook.com",
-          })}
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: t("common.businessName"),
+          description: t("seo.homeDesc"),
+          areaServed: "Auckland",
+          url: typeof window !== 'undefined' ? window.location.origin : undefined,
+          telephone: "029 04 561 561",
+          email: "swade.it@outlook.com"
+        })}
         </script>
       </Helmet>
       
       {/* Hero Section */}
-      <section
-        ref={heroRef}
-        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero"
-        aria-labelledby="hero-heading"
-      >
+      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero" aria-labelledby="hero-heading">
         {/* Content Container */}
         <div className="relative z-10 container-premium section-spacing">
           <div className="max-w-6xl mx-auto text-center">
@@ -69,7 +60,7 @@ const Index = () => {
                 <p className="text-lg text-muted-foreground font-light tracking-wide uppercase">
                   {t("common.slogan")}
                 </p>
-                <h1 id="hero-heading" className="text-foreground leading-none">
+                <h1 id="hero-heading" className="text-foreground leading-none font-normal text-5xl">
                   {t("home.hero.title")}
                 </h1>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
@@ -121,24 +112,20 @@ const Index = () => {
               <div className="p-10 bg-card border border-border shadow-card">
                 <h3 className="text-2xl font-medium mb-8 text-foreground">{t("services.officeTitle")}</h3>
                 <ul className="space-y-6">
-                  {officeList.map((item, index) => (
-                    <li key={index} className="flex items-start">
+                  {officeList.map((item, index) => <li key={index} className="flex items-start">
                       <div className="w-2 h-2 rounded-full bg-primary mt-3 mr-6 flex-shrink-0" />
                       <span className="text-muted-foreground leading-relaxed">{item}</span>
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
               </div>
               
               <div className="p-10 bg-card border border-border shadow-card">
                 <h3 className="text-2xl font-medium mb-8 text-foreground">{t("services.homeTitle")}</h3>
                 <ul className="space-y-6">
-                  {homeList.map((item, index) => (
-                    <li key={index} className="flex items-start">
+                  {homeList.map((item, index) => <li key={index} className="flex items-start">
                       <div className="w-2 h-2 rounded-full bg-primary mt-3 mr-6 flex-shrink-0" />
                       <span className="text-muted-foreground leading-relaxed">{item}</span>
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
               </div>
             </div>
@@ -151,8 +138,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default Index;
