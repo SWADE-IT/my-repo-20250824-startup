@@ -46,7 +46,7 @@ const translations: Record<Language, Translations> = {
       hero: {
         title: "Auckland small business & home IT support",
         subtitle:
-          "Office 365 deployment, VPN for working anywhere, network troubleshooting, and reliable home solutions.",
+          "Office IT deployment, VPN for working from anywhere, network troubleshooting, and home IT solutions.",
       },
       highlights: {
         fast: "Fast & friendly",
@@ -137,7 +137,7 @@ const translations: Record<Language, Translations> = {
       hero: {
         title: "奥克兰小微企业与家庭 IT 支持",
         subtitle:
-          "Office 365 部署、随时随地的 VPN 远程办公、Outlook 邮件排障，以及可靠的家庭网络修复。",
+          "办公室 IT 部署、随时随地的 VPN 远程办公、网络故障排查，以及家庭 IT 解决方案。",
       },
       highlights: {
         fast: "快速友好",
