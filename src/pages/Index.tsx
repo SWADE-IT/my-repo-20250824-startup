@@ -57,6 +57,9 @@ const Index = () => {
           <div className="max-w-6xl mx-auto text-center">
             <div className="space-y-12">
               <div className="space-y-8">
+                <h2 className="text-6xl font-light tracking-wide uppercase text-primary mb-4">
+                  SWADE IT
+                </h2>
                 <p className="text-lg text-muted-foreground font-light tracking-wide uppercase">
                   {t("common.slogan")}
                 </p>
