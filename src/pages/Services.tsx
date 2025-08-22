@@ -64,7 +64,7 @@ const Services = () => {
               <h2 className="text-3xl font-bold mb-12 text-foreground">{t("services.officeTitle")}</h2>
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                  {officeList.map((item, index) => (
-                   <article key={item} className="p-6 rounded-lg border border-gray-200 bg-service-card hover:border-primary/50 transition-colors shadow-sm">
+                   <article key={item} className="p-6 rounded-lg bg-service-card hover:shadow-md transition-colors shadow-sm">
                      <div className="flex flex-col items-center text-center">
                        <div className="mb-6 p-4 bg-service-icon-bg rounded-lg">
                         <img 
@@ -88,7 +88,7 @@ const Services = () => {
               <h2 className="text-3xl font-bold mb-12 text-foreground">{t("services.homeTitle")}</h2>
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                  {homeList.map((item, index) => (
-                   <article key={item} className="p-6 rounded-lg border border-gray-200 bg-service-card hover:border-primary/50 transition-colors shadow-sm">
+                   <article key={item} className="p-6 rounded-lg bg-service-card hover:shadow-md transition-colors shadow-sm">
                      <div className="flex flex-col items-center text-center">
                        <div className="mb-6 p-4 bg-service-icon-bg rounded-lg">
                          <img 
