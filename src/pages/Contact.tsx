@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useT } from "@/i18n/LanguageContext";
 import qrWhatsApp from "/lovable-uploads/1af7859a-a886-4513-ba8f-ed3687aff7bf.png";
-import qrWeChat from "@/assets/qr-wechat.png";
+import qrWeChat from "/lovable-uploads/d572fcfb-fb8a-4b04-8263-038bfa16a445.png";
 
 const Contact = () => {
   const t = useT();
