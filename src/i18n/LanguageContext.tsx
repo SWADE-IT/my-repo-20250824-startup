@@ -67,14 +67,16 @@ const translations: Record<Language, Translations> = {
         "Microsoft Office 365 Deployment",
         "VPN secure remote work access setup", 
         "NAS and Private Cloud establishment",
-        "Uninterruptible Power Supply"
+        "Uninterruptible Power Supply",
+        "New office router and network setup"
       ],
       officeDetails: [
         "You got a new employee and want to set up a computer for the employee?",
         "You want Office 365 deployment like Outlook email, Teams and group cloud drive?",
         "You want yourself or your staff to be able to work from home or from anywhere securely access your office resource via VPN secure tunnel?",
         "You don't want to use public cloud drive but want to build your own private storage or office shared drive with modern NAS and data protection? Or even with Geo-redundancy remotely backup the data everyday to a different place?",
-        "You want a UPS to keep your important IT devices be protected from sudden power outage or just want the office internet still on even if a power outage happen?"
+        "You want a UPS to keep your important IT devices be protected from sudden power outage or just want the office internet still on even if a power outage happen?",
+        "You want to upgrade your office network infrastructure with a new router and proper network configuration for better performance and security?"
       ],
       homeTitle: "Personal & Residential Services",
       homeList: [
@@ -159,6 +161,7 @@ const translations: Record<Language, Translations> = {
         "Outlook 邮箱问题排查",
         "随时随地办公的 VPN 搭建与远程访问设置",
         "办公室网络故障排查",
+        "新办公室路由器与网络设置"
       ],
       homeTitle: "个人与家庭服务",
       homeList: [
@@ -171,7 +174,8 @@ const translations: Record<Language, Translations> = {
         "您想部署 Office 365 包括 Outlook 邮箱、Teams 和共享云盘？",
         "您想让自己或员工能够安全地从家里或任何地方通过 VPN 安全隧道访问办公室资源？",
         "您不想使用公共云盘，而想建立自己的私有存储或办公室共享驱动器，配备现代 NAS 和数据保护？甚至可以异地冗余备份？",
-        "您想要 UPS 来保护重要的 IT 设备免受突然断电影响，或在停电时保持办公室网络运行？"
+        "您想要 UPS 来保护重要的 IT 设备免受突然断电影响，或在停电时保持办公室网络运行？",
+        "您想要升级办公室网络基础设施，配置新路由器和专业网络设置以获得更好的性能和安全性？"
       ],
       homeDetails: [
         "您换了新的宽带服务但无法正常连接互联网？",
