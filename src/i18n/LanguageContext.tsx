@@ -102,7 +102,7 @@ const translations: Record<Language, Translations> = {
       whatsapp: "WhatsApp",
       wechat: "WeChat",
       note:
-        "Scan QR codes or call us directly for fast IT support.",
+        "Scan QR code for more effective domain expert support.",
     },
   },
   zh: {
@@ -191,7 +191,7 @@ const translations: Record<Language, Translations> = {
       phone: "手机",
       whatsapp: "WhatsApp",
       wechat: "微信",
-      note: "当前二维码为示意图，替换为您的真实二维码即可扫码。",
+      note: "扫描二维码获取更有效的专业技术支持。",
     },
   },
 };
