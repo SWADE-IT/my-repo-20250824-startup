@@ -12,6 +12,7 @@ import wifiExtension from "@/assets/service-wifi-extension.png";
 import homeNas from "@/assets/service-home-nas.png";
 import homeSecurity from "@/assets/service-home-security.png";
 import officeRouter from "@/assets/service-office-router.png";
+import cyberSecurity from "@/assets/service-cyber-security.png";
 
 const Services = () => {
   const { t, tv } = useI18n();
@@ -21,7 +22,7 @@ const Services = () => {
   const homeDetails: string[] = tv("services.homeDetails") as string[] || [];
   const canonical = typeof window !== 'undefined' ? window.location.origin + '/services' : '/services';
 
-  const officeImages = [officeRouter, computerSetup, microsoft365, vpnSetup, nasCloud, upsPower];
+  const officeImages = [cyberSecurity, computerSetup, microsoft365, vpnSetup, nasCloud, upsPower];
   const homeImages = [internetTroubleshooting, wifiExtension, homeNas, homeSecurity];
 
   return (

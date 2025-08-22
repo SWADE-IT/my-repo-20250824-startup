@@ -63,7 +63,7 @@ const translations: Record<Language, Translations> = {
       title: "Services",
       officeTitle: "Office IT Services",
       officeList: [
-        "New office router and network setup",
+        "Cyber Security audit and remediation",
         "New employee computer setup",
         "Microsoft Office 365 Deployment",
         "VPN secure remote work access setup", 
@@ -71,7 +71,7 @@ const translations: Record<Language, Translations> = {
         "Uninterruptible Power Supply"
       ],
       officeDetails: [
-        "You want to upgrade your office network infrastructure with a new router and proper network configuration for better performance and security?",
+        "You want to assess your business cyber security posture and implement proper security measures to protect against data breaches and cyber threats?",
         "You got a new employee and want to set up a computer for the employee?",
         "You want Office 365 deployment like Outlook email, Teams and group cloud drive?",
         "You want yourself or your staff to be able to work from home or from anywhere securely access your office resource via VPN secure tunnel?",
@@ -156,7 +156,7 @@ const translations: Record<Language, Translations> = {
       title: "服务项目",
       officeTitle: "企业办公室 IT 服务",
       officeList: [
-        "新办公室路由器与网络设置",
+        "网络安全审计与修复",
         "新员工电脑环境部署",
         "Microsoft Office 365 部署",
         "Outlook 邮箱问题排查",
@@ -170,7 +170,7 @@ const translations: Record<Language, Translations> = {
         "家庭安防监控（CCTV）安装",
       ],
       officeDetails: [
-        "您想要升级办公室网络基础设施，配置新路由器和专业网络设置以获得更好的性能和安全性？",
+        "您想要评估企业网络安全状况并实施适当的安全措施以防范数据泄露和网络威胁？",
         "您招聘了新员工需要为其配置办公电脑？",
         "您想部署 Office 365 包括 Outlook 邮箱、Teams 和共享云盘？",
         "您想让自己或员工能够安全地从家里或任何地方通过 VPN 安全隧道访问办公室资源？",
