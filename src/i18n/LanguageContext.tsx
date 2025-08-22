@@ -91,7 +91,7 @@ const translations: Record<Language, Translations> = {
         "You don't trust cloud storage and want to have your precious files, photos and videos automatically backup to your private drive like a NAS at home with disk redundancy? Or even create your private media server with easy mobile access?",
         "You have concern about the worsening public security and want install home security CCTV and alarm system?"
       ],
-      summary: "We do all those brain heavy lifting work for you - network troubleshooting, VPN creation and remote access setup, Microsoft Office 365 office software deployment, just contact us now."
+      summary: "We do all those nerve-racking and brain-heavy-lifting works for you, just contact us now with a brief message about the issue."
     },
     contact: {
       title: "Contact",
