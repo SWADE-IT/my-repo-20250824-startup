@@ -22,6 +22,7 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         display: ['Inter', 'system-ui', 'sans-serif'],
         artistic: ['Cinzel', 'serif'],
+        handwritten: ['Dancing Script', 'cursive'],
       },
       colors: {
 				border: 'hsl(var(--border))',
