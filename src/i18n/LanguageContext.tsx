@@ -20,7 +20,7 @@ const translations: Record<Language, Translations> = {
         contact: "Get Support",
         learnMore: "Learn more",
       },
-      location: "Auckland, New Zealand",
+      location: "Auckland wide",
     },
     nav: {
       home: "Home",
@@ -113,7 +113,7 @@ const translations: Record<Language, Translations> = {
         contact: "获取支持",
         learnMore: "了解更多",
       },
-      location: "新西兰 奥克兰",
+      location: "奥克兰全区",
     },
     nav: {
       home: "首页",
