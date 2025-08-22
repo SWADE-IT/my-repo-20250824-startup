@@ -88,7 +88,7 @@ const translations: Record<Language, Translations> = {
       homeDetails: [
         "You switched to a new broadband service but having trouble to get the internet connection?",
         "Your home WiFi connection is not stable or WiFi signal is too weak in some areas?",
-        "You don't trust cloud storage and want to have your precious files, photos and videos automatically backup to your private drive like a NAS at home with disk redundancy? Or even building your own media with easy mobile access?",
+        "You don't trust cloud storage and want to have your precious files, photos and videos automatically backup to your private drive like a NAS at home with disk redundancy? Or even create your private media server with easy mobile access?",
         "You have concern about the worsening public security and want install home security CCTV and alarm system?"
       ],
       summary: "We do all those brain heavy lifting work for you - network troubleshooting, VPN creation and remote access setup, Microsoft Office 365 office software deployment, just contact us now."
