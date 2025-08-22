@@ -70,7 +70,7 @@ const Services = () => {
                         <img 
                           src={officeImages[index]} 
                           alt={`${item} service icon`}
-                          className="w-16 h-16 object-contain"
+                          className="w-24 h-24 object-contain"
                         />
                       </div>
                        <h3 className="text-lg font-semibold mb-4 text-service-card-foreground">{item}</h3>
@@ -91,11 +91,11 @@ const Services = () => {
                    <article key={item} className="p-6 rounded-lg border border-gray-200 bg-service-card hover:border-primary/50 transition-colors shadow-sm">
                      <div className="flex flex-col items-center text-center">
                        <div className="mb-6 p-4 bg-service-icon-bg rounded-lg">
-                        <img 
-                          src={homeImages[index]} 
-                          alt={`${item} service icon`}
-                          className="w-16 h-16 object-contain"
-                        />
+                         <img 
+                           src={homeImages[index]} 
+                           alt={`${item} service icon`}
+                           className="w-24 h-24 object-contain"
+                         />
                       </div>
                        <h3 className="text-lg font-semibold mb-4 text-service-card-foreground">{item}</h3>
                        <p className="text-gray-600 text-sm leading-relaxed">
