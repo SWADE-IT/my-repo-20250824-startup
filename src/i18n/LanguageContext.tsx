@@ -64,7 +64,7 @@ const translations: Record<Language, Translations> = {
       officeTitle: "Office IT Services",
       officeList: [
         "New employee computer setup",
-        "Microsoft 365 Deployment",
+        "Microsoft Office 365 Deployment",
         "VPN remote work access setup", 
         "NAS and Private Cloud establishment",
         "Uninterruptible Power Supply"
@@ -155,7 +155,7 @@ const translations: Record<Language, Translations> = {
       officeTitle: "企业办公室 IT 服务",
       officeList: [
         "新员工电脑环境部署",
-        "Office 365 部署",
+        "Microsoft Office 365 部署",
         "Outlook 邮箱问题排查",
         "随时随地办公的 VPN 搭建与远程访问设置",
         "办公室网络故障排查",
