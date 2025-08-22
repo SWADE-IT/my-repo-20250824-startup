@@ -49,7 +49,7 @@ const translations: Record<Language, Translations> = {
           "Network troubleshooting, office IT system deployment, secure remote working setup, home WIFI or Internet issues fixing, home security and CCTV solutions",
       },
       highlights: {
-        fast: "Fast & friendly",
+        fast: "Community-oriented",
         budget: "Within your budget",
         local: "Local to Auckland",
       },
@@ -140,7 +140,7 @@ const translations: Record<Language, Translations> = {
           "网络故障排查、办公室 IT 系统部署、安全远程办公设置、家庭 WIFI 或网络问题修复、家庭安防和监控解决方案",
       },
       highlights: {
-        fast: "快速友好",
+        fast: "社区导向",
         budget: "预算可控",
         local: "本地服务",
       },
