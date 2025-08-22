@@ -63,18 +63,18 @@ const Services = () => {
             <div className="mb-20">
               <h2 className="text-3xl font-bold mb-12 text-foreground">{t("services.officeTitle")}</h2>
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                {officeList.map((item, index) => (
-                  <article key={item} className="p-6 rounded-lg border border-border bg-card hover:border-primary/50 transition-colors">
-                    <div className="flex flex-col items-center text-center">
-                      <div className="mb-6 p-4 bg-muted rounded-lg">
+                 {officeList.map((item, index) => (
+                   <article key={item} className="p-6 rounded-lg border border-gray-200 bg-service-card hover:border-primary/50 transition-colors shadow-sm">
+                     <div className="flex flex-col items-center text-center">
+                       <div className="mb-6 p-4 bg-service-icon-bg rounded-lg">
                         <img 
                           src={officeImages[index]} 
                           alt={`${item} service icon`}
                           className="w-16 h-16 object-contain"
                         />
                       </div>
-                      <h3 className="text-lg font-semibold mb-4 text-foreground">{item}</h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
+                       <h3 className="text-lg font-semibold mb-4 text-service-card-foreground">{item}</h3>
+                       <p className="text-gray-600 text-sm leading-relaxed">
                         {officeDetails[index]}
                       </p>
                     </div>
@@ -87,18 +87,18 @@ const Services = () => {
             <div className="mb-20">
               <h2 className="text-3xl font-bold mb-12 text-foreground">{t("services.homeTitle")}</h2>
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-                {homeList.map((item, index) => (
-                  <article key={item} className="p-6 rounded-lg border border-border bg-card hover:border-primary/50 transition-colors">
-                    <div className="flex flex-col items-center text-center">
-                      <div className="mb-6 p-4 bg-muted rounded-lg">
+                 {homeList.map((item, index) => (
+                   <article key={item} className="p-6 rounded-lg border border-gray-200 bg-service-card hover:border-primary/50 transition-colors shadow-sm">
+                     <div className="flex flex-col items-center text-center">
+                       <div className="mb-6 p-4 bg-service-icon-bg rounded-lg">
                         <img 
                           src={homeImages[index]} 
                           alt={`${item} service icon`}
                           className="w-16 h-16 object-contain"
                         />
                       </div>
-                      <h3 className="text-lg font-semibold mb-4 text-foreground">{item}</h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
+                       <h3 className="text-lg font-semibold mb-4 text-service-card-foreground">{item}</h3>
+                       <p className="text-gray-600 text-sm leading-relaxed">
                         {homeDetails[index]}
                       </p>
                     </div>

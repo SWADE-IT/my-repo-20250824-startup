@@ -59,6 +59,9 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				golden: 'hsl(var(--lexus-gold))',
+				'service-card': 'hsl(var(--service-card))',
+				'service-card-foreground': 'hsl(var(--service-card-foreground))',
+				'service-icon-bg': 'hsl(var(--service-icon-bg))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
