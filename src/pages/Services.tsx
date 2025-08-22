@@ -21,7 +21,7 @@ const Services = () => {
   const homeDetails: string[] = tv("services.homeDetails") as string[] || [];
   const canonical = typeof window !== 'undefined' ? window.location.origin + '/services' : '/services';
 
-  const officeImages = [computerSetup, microsoft365, vpnSetup, nasCloud, upsPower, officeRouter];
+  const officeImages = [officeRouter, computerSetup, microsoft365, vpnSetup, nasCloud, upsPower];
   const homeImages = [internetTroubleshooting, wifiExtension, homeNas, homeSecurity];
 
   return (
