@@ -46,7 +46,7 @@ const translations: Record<Language, Translations> = {
       hero: {
         title: "Auckland small business & home IT support",
         subtitle:
-          "Office IT deployment, VPN for working from anywhere, network troubleshooting, and home IT solutions.",
+          "Network troubleshooting, Office IT system deployment, Remote working setup, Home WIFI, Internet issues fixing and CCTV solutions",
       },
       highlights: {
         fast: "Fast & friendly",
@@ -137,7 +137,7 @@ const translations: Record<Language, Translations> = {
       hero: {
         title: "奥克兰小微企业与家庭 IT 支持",
         subtitle:
-          "办公室 IT 部署、随时随地的 VPN 远程办公、网络故障排查，以及家庭 IT 解决方案。",
+          "网络故障排查、办公室 IT 系统部署、远程办公设置、家庭 WIFI、网络问题修复和监控解决方案",
       },
       highlights: {
         fast: "快速友好",
