@@ -65,7 +65,7 @@ const translations: Record<Language, Translations> = {
       officeList: [
         "New employee computer setup",
         "Microsoft Office 365 Deployment",
-        "VPN remote work access setup", 
+        "VPN secure remote work access setup", 
         "NAS and Private Cloud establishment",
         "Uninterruptible Power Supply"
       ],
