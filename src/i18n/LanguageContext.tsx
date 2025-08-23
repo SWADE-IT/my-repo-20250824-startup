@@ -82,7 +82,7 @@ const translations: Record<Language, Translations> = {
       homeList: [
         "Internet connection troubleshooting",
         "WiFi range extension", 
-        "NAS for private photos and videos automatic backup",
+        "NAS for private auto-backup of precious photos/videos",
         "CCTV and home security alarm system solution"
       ],
       homeDetails: [
