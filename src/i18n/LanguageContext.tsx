@@ -76,7 +76,7 @@ const translations: Record<Language, Translations> = {
         "Want modern digital tools for better team collaboration to improve employees productivity like Office 365 deployment, Outlook email, Teams video meeting with clients and SharePoint for easy share files securely?",
         "Want staff to be able to work from home or from anywhere securely access office resource via VPN secure tunnel?",
         "Don't want to use public cloud drive but want to build private storage or office shared drive with modern NAS and data protection? Or even with Geo-redundancy remotely backup the data everyday to a different place?",
-        "Want a UPS to keep important IT devices be protected from sudden power outage or just want the office internet still on even if a power outage happen?"
+        "Want a UPS to keep critical devices like WIFI router or servers remain in service even if a power outage happen?"
       ],
       homeTitle: "Personal & Residential Services",
       homeList: [
@@ -175,7 +175,7 @@ const translations: Record<Language, Translations> = {
         "想要现代化数字工具来提高团队协作和员工生产力，如 Office 365 部署、Outlook 邮箱、Teams 客户视频会议和 SharePoint 安全文件共享？",
         "想让员工能够安全地从家里或任何地方通过 VPN 安全隧道访问办公室资源？",
         "不想使用公共云盘，而想建立自己的私有存储或办公室共享驱动器，配备现代 NAS 和数据保护？甚至可以异地冗余备份？",
-        "想要 UPS 来保护重要的 IT 设备免受突然断电影响，或在停电时保持办公室网络运行？"
+        "想要 UPS 来保护关键设备如 WIFI 路由器或服务器在停电时继续运行？"
       ],
       homeDetails: [
         "换了新的宽带服务但无法正常连接互联网？",
