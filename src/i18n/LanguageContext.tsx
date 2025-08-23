@@ -104,7 +104,7 @@ const translations: Record<Language, Translations> = {
       intro:
         "We might be busy on the line when you calling, so please use either WhatsApp or WeChat leave a message to us with your case details so that we can get the 1st available domain expert look into your case and respond you in the most effective way.",
       phone: "029 04 561 561",
-      email: "swade.it@outlook.com",
+      email: "admin@swade.co.nz",
       whatsapp: "WhatsApp",
       wechat: "WeChat",
       note:
@@ -203,7 +203,7 @@ const translations: Record<Language, Translations> = {
       intro:
         "电话繁忙时，请通过 WhatsApp 或微信留言详细说明您的情况，我们会安排最合适的技术专家第一时间查看您的问题并以最有效的方式回复您。",
       phone: "029 04 561 561",
-      email: "swade.it@outlook.com",
+      email: "admin@swade.co.nz",
       whatsapp: "WhatsApp",
       wechat: "微信",
       note:
