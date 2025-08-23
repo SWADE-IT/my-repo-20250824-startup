@@ -188,7 +188,7 @@ const translations: Record<Language, Translations> = {
         "网络故障抢修",
         "WiFi 问题及覆盖范围拓展",
         "NAS私有云创建",
-        "CCTV 和家庭安防报警系统解决方案"
+        "CCTV、安防警报系统解决方案"
       ],
       homeDetails: [
         "网络故障？或刚换了新的宽带运营商但无法正常连上网？",
