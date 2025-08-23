@@ -86,10 +86,10 @@ const translations: Record<Language, Translations> = {
         "CCTV and home security alarm system solution"
       ],
       homeDetails: [
-        "You switched to a new broadband service but having trouble to get the internet connection?",
-        "Your home WiFi connection is not stable or WiFi signal is too weak in some areas?",
-        "You don't trust cloud storage and want to have your precious files, photos and videos automatically backup to your private drive like a NAS at home with disk redundancy? Or even create your private media server with easy mobile access?",
-        "You have concern about the worsening public security and want install home security CCTV and alarm system?"
+        "Switched to a new broadband service but having trouble getting the internet connection?",
+        "Home WiFi connection is not stable or WiFi signal is too weak in some areas?",
+        "Don't trust cloud storage and want to have precious files, photos and videos automatically backup to private drive like a NAS at home with disk redundancy? Or even create private media server with easy mobile access?",
+        "Have concern about the worsening public security and want install home security CCTV and alarm system?"
       ],
       summary: "We do all those nerve-racking and brain-heavy-lifting works for you, just contact us now with a brief message about the issue."
     },
@@ -178,10 +178,10 @@ const translations: Record<Language, Translations> = {
         "您想要 UPS 来保护重要的 IT 设备免受突然断电影响，或在停电时保持办公室网络运行？"
       ],
       homeDetails: [
-        "您换了新的宽带服务但无法正常连接互联网？",
-        "您的家庭 Wi-Fi 连接不稳定或某些区域信号太弱？",
-        "您不信任云存储，想要将珍贵的文件、照片和视频自动备份到家中的私有驱动器（如 NAS）并具备磁盘冗余？或者搭建自己的媒体服务器？",
-        "您担心日益恶化的公共安全，想要安装家庭安防监控和报警系统？"
+        "换了新的宽带服务但无法正常连接互联网？",
+        "家庭 Wi-Fi 连接不稳定或某些区域信号太弱？",
+        "不信任云存储，想要将珍贵的文件、照片和视频自动备份到家中的私有驱动器（如 NAS）并具备磁盘冗余？或者搭建自己的媒体服务器？",
+        "担心日益恶化的公共安全，想要安装家庭安防监控和报警系统？"
       ],
       summary: "我们为您承担所有的技术重担 - 网络故障排查、VPN 创建和远程访问设置、Microsoft Office 365 办公软件部署，请立即联系我们。"
     },
