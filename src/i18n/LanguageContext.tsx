@@ -73,7 +73,7 @@ const translations: Record<Language, Translations> = {
       officeDetails: [
         "Worrying about rising risk of business loss and negative impact from cyber attack? Want to assess and implement proper security measures to protect against data breaches and cyber threats?",
         "Got a new employee and want to set up a computer for the employee?",
-        "Want Office 365 deployment like Outlook email, Teams and group cloud drive?",
+        "Want modern digital tools for better team collaboration to improve employees productivity like Office 365 deployment, Outlook email, Teams video meeting with clients and SharePoint for easy share files securely?",
         "Want staff to be able to work from home or from anywhere securely access office resource via VPN secure tunnel?",
         "Don't want to use public cloud drive but want to build private storage or office shared drive with modern NAS and data protection? Or even with Geo-redundancy remotely backup the data everyday to a different place?",
         "Want a UPS to keep important IT devices be protected from sudden power outage or just want the office internet still on even if a power outage happen?"
@@ -172,7 +172,7 @@ const translations: Record<Language, Translations> = {
       officeDetails: [
         "担心网络攻击造成业务损失和负面影响的风险不断上升？想要评估并实施适当的安全措施以防范数据泄露和网络威胁？",
         "招聘了新员工需要为其配置办公电脑？",
-        "想部署 Office 365 包括 Outlook 邮箱、Teams 和共享云盘？",
+        "想要现代化数字工具来提高团队协作和员工生产力，如 Office 365 部署、Outlook 邮箱、Teams 客户视频会议和 SharePoint 安全文件共享？",
         "想让员工能够安全地从家里或任何地方通过 VPN 安全隧道访问办公室资源？",
         "不想使用公共云盘，而想建立自己的私有存储或办公室共享驱动器，配备现代 NAS 和数据保护？甚至可以异地冗余备份？",
         "想要 UPS 来保护重要的 IT 设备免受突然断电影响，或在停电时保持办公室网络运行？"
