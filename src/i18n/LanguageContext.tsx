@@ -86,7 +86,7 @@ const translations: Record<Language, Translations> = {
         "CCTV and home security alarm system solution"
       ],
       homeDetails: [
-        "Switched to a new broadband service but having trouble getting the internet connection?",
+        "Lost internet or just switched to a new broadband provider but having trouble to get the internet connection?",
         "Home WiFi connection is not stable or WiFi signal is too weak in some areas?",
         "Don't trust cloud storage and want to have precious files, photos and videos automatically backup to private drive like a NAS at home with disk redundancy? Or even create private media server with easy mobile access?",
         "Have concern about the worsening public security and want install home security CCTV and alarm system?"
@@ -178,7 +178,7 @@ const translations: Record<Language, Translations> = {
         "想要 UPS 来保护关键设备如 WIFI 路由器或服务器在停电时继续运行？"
       ],
       homeDetails: [
-        "换了新的宽带服务但无法正常连接互联网？",
+        "网络中断或刚换了新的宽带服务商但无法正常连接互联网？",
         "家庭 Wi-Fi 连接不稳定或某些区域信号太弱？",
         "不信任云存储，想要将珍贵的文件、照片和视频自动备份到家中的私有驱动器（如 NAS）并具备磁盘冗余？或者搭建自己的媒体服务器？",
         "担心日益恶化的公共安全，想要安装家庭安防监控和报警系统？"
