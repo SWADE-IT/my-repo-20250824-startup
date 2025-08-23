@@ -53,6 +53,9 @@ const translations: Record<Language, Translations> = {
         budget: "Within your budget",
         local: "Local to Auckland",
       },
+      servicesOverview: {
+        title: "Our Services",
+      },
     },
     about: {
       title: "About SWADE IT",
@@ -145,6 +148,9 @@ const translations: Record<Language, Translations> = {
         fast: "扎根社区",
         budget: "预算可控",
         local: "本地服务",
+      },
+      servicesOverview: {
+        title: "服务类别",
       },
     },
     about: {
