@@ -107,7 +107,7 @@ const Index = () => {
                 {t("home.servicesOverview.title")}
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Practical IT services and solutions for small businesses and homes
+                {t("home.servicesOverview.subtitle")}
               </p>
             </div>
             
