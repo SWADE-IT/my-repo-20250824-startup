@@ -168,7 +168,7 @@ const translations: Record<Language, Translations> = {
       subtitle: "专为小企业与家庭用户打造实用、专业的IT服务、解决方案与技术支持",
       officeTitle: "企业办公室 IT 服务",
       officeList: [
-        "网络安全审计与修复",
+        "网络安全评估与补救",
         "新员工电脑环境部署",
         "Microsoft Office 365 部署",
         "VPN 安全远程办公访问设置",
