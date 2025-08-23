@@ -39,8 +39,35 @@ const Contact = () => {
               </p>
             </div>
 
+            {/* QR Codes */}
+            <div className="grid gap-8 md:grid-cols-2 mb-16">
+              <div className="p-8 rounded-lg border border-border bg-card text-center">
+                <h3 className="text-xl font-semibold mb-6 text-foreground">{t("contact.whatsapp")}</h3>
+                <div className="inline-block p-4 bg-white rounded-lg">
+                  <img 
+                    src={qrWhatsApp} 
+                    alt="WhatsApp QR Code" 
+                    className="w-48 h-48 mx-auto"
+                  />
+                </div>
+                <p className="text-muted-foreground mt-4">Scan to chat on WhatsApp</p>
+              </div>
+
+              <div className="p-8 rounded-lg border border-border bg-card text-center">
+                <h3 className="text-xl font-semibold mb-6 text-foreground">{t("contact.wechat")}</h3>
+                <div className="inline-block p-4 bg-white rounded-lg">
+                  <img 
+                    src={qrWeChat} 
+                    alt="WeChat QR Code" 
+                    className="w-48 h-48 mx-auto"
+                  />
+                </div>
+                <p className="text-muted-foreground mt-4">Scan to chat on WeChat</p>
+              </div>
+            </div>
+
             {/* Contact Methods */}
-            <div className="grid gap-8 md:grid-cols-3 mb-16">
+            <div className="grid gap-8 md:grid-cols-3 mb-12">
               {/* Phone */}
               <div className="p-8 rounded-lg border border-border bg-card text-center">
                 <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -85,33 +112,6 @@ const Contact = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-foreground">Location</h3>
                 <p className="text-lg text-muted-foreground">{t("common.location")}</p>
-              </div>
-            </div>
-
-            {/* QR Codes */}
-            <div className="grid gap-8 md:grid-cols-2 mb-12">
-              <div className="p-8 rounded-lg border border-border bg-card text-center">
-                <h3 className="text-xl font-semibold mb-6 text-foreground">{t("contact.whatsapp")}</h3>
-                <div className="inline-block p-4 bg-white rounded-lg">
-                  <img 
-                    src={qrWhatsApp} 
-                    alt="WhatsApp QR Code" 
-                    className="w-48 h-48 mx-auto"
-                  />
-                </div>
-                <p className="text-muted-foreground mt-4">Scan to chat on WhatsApp</p>
-              </div>
-
-              <div className="p-8 rounded-lg border border-border bg-card text-center">
-                <h3 className="text-xl font-semibold mb-6 text-foreground">{t("contact.wechat")}</h3>
-                <div className="inline-block p-4 bg-white rounded-lg">
-                  <img 
-                    src={qrWeChat} 
-                    alt="WeChat QR Code" 
-                    className="w-48 h-48 mx-auto"
-                  />
-                </div>
-                <p className="text-muted-foreground mt-4">Scan to chat on WeChat</p>
               </div>
             </div>
 
