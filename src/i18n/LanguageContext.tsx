@@ -119,7 +119,7 @@ const translations: Record<Language, Translations> = {
         contact: "获取支持",
         learnMore: "了解更多",
       },
-      location: "奥克兰全区",
+      location: "奥克兰全区域覆盖",
     },
     nav: {
       home: "首页",
