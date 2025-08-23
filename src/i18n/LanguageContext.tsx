@@ -187,7 +187,7 @@ const translations: Record<Language, Translations> = {
       homeList: [
         "网络故障抢修",
         "WiFi 问题及覆盖范围拓展",
-        "NAS 私有自动备份珍贵照片/视频",
+        "NAS私有云创建",
         "CCTV 和家庭安防报警系统解决方案"
       ],
       homeDetails: [
