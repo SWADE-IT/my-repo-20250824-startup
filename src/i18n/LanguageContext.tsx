@@ -71,12 +71,12 @@ const translations: Record<Language, Translations> = {
         "Uninterruptible Power Supply"
       ],
       officeDetails: [
-        "You want to assess your business cyber security posture and implement proper security measures to protect against data breaches and cyber threats?",
-        "You got a new employee and want to set up a computer for the employee?",
-        "You want Office 365 deployment like Outlook email, Teams and group cloud drive?",
-        "You want yourself or your staff to be able to work from home or from anywhere securely access your office resource via VPN secure tunnel?",
-        "You don't want to use public cloud drive but want to build your own private storage or office shared drive with modern NAS and data protection? Or even with Geo-redundancy remotely backup the data everyday to a different place?",
-        "You want a UPS to keep your important IT devices be protected from sudden power outage or just want the office internet still on even if a power outage happen?"
+        "Want to assess business cyber security posture and implement proper security measures to protect against data breaches and cyber threats?",
+        "Got a new employee and want to set up a computer for the employee?",
+        "Want Office 365 deployment like Outlook email, Teams and group cloud drive?",
+        "Want staff to be able to work from home or from anywhere securely access office resource via VPN secure tunnel?",
+        "Don't want to use public cloud drive but want to build private storage or office shared drive with modern NAS and data protection? Or even with Geo-redundancy remotely backup the data everyday to a different place?",
+        "Want a UPS to keep important IT devices be protected from sudden power outage or just want the office internet still on even if a power outage happen?"
       ],
       homeTitle: "Personal & Residential Services",
       homeList: [
@@ -170,12 +170,12 @@ const translations: Record<Language, Translations> = {
         "家庭安防监控（CCTV）安装",
       ],
       officeDetails: [
-        "您想要评估企业网络安全状况并实施适当的安全措施以防范数据泄露和网络威胁？",
-        "您招聘了新员工需要为其配置办公电脑？",
-        "您想部署 Office 365 包括 Outlook 邮箱、Teams 和共享云盘？",
-        "您想让自己或员工能够安全地从家里或任何地方通过 VPN 安全隧道访问办公室资源？",
-        "您不想使用公共云盘，而想建立自己的私有存储或办公室共享驱动器，配备现代 NAS 和数据保护？甚至可以异地冗余备份？",
-        "您想要 UPS 来保护重要的 IT 设备免受突然断电影响，或在停电时保持办公室网络运行？"
+        "想要评估企业网络安全状况并实施适当的安全措施以防范数据泄露和网络威胁？",
+        "招聘了新员工需要为其配置办公电脑？",
+        "想部署 Office 365 包括 Outlook 邮箱、Teams 和共享云盘？",
+        "想让员工能够安全地从家里或任何地方通过 VPN 安全隧道访问办公室资源？",
+        "不想使用公共云盘，而想建立自己的私有存储或办公室共享驱动器，配备现代 NAS 和数据保护？甚至可以异地冗余备份？",
+        "想要 UPS 来保护重要的 IT 设备免受突然断电影响，或在停电时保持办公室网络运行？"
       ],
       homeDetails: [
         "换了新的宽带服务但无法正常连接互联网？",
