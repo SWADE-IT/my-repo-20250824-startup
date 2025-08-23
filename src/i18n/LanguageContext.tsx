@@ -215,14 +215,24 @@ const translations: Record<Language, Translations> = {
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
 export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [lang, setLang] = useState<Language>(() => (localStorage.getItem("lang") as Language) || "en");
+  const [lang, setLang] = useState<Language>(() => {
+    try {
+      return (localStorage.getItem("lang") as Language) || "en";
+    } catch {
+      return "en";
+    }
+  });
 
   useEffect(() => {
-    localStorage.setItem("lang", lang);
+    try {
+      localStorage.setItem("lang", lang);
+    } catch {
+      // Ignore localStorage errors in SSR or restricted environments
+    }
   }, [lang]);
 
   const { t, tv } = useMemo(() => {
-    const dict = translations[lang];
+    const dict = translations[lang] || translations.en;
     const getter = (key: string): any => {
       const parts = key.split(".");
       let cur: any = dict;
@@ -245,10 +255,20 @@ export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
 export function useI18n() {
   const ctx = useContext(I18nContext);
-  if (!ctx) throw new Error("useI18n must be used within I18nProvider");
+  if (!ctx) {
+    console.error("useI18n called outside of I18nProvider");
+    // Return a fallback context to prevent crashes
+    return {
+      lang: "en" as Language,
+      setLang: () => {},
+      t: (key: string) => key,
+      tv: (key: string) => key
+    };
+  }
   return ctx;
 }
 
 export function useT() {
-  return useI18n().t;
+  const { t } = useI18n();
+  return t;
 }
