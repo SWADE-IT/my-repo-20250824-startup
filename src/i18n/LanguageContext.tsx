@@ -91,7 +91,7 @@ const translations: Record<Language, Translations> = {
         "Don't trust cloud storage and want to have precious files, photos and videos automatically backup to private drive like a NAS at home with disk redundancy? Or even create private media server with easy mobile access?",
         "Have concern about the worsening public security and want install home security CCTV and alarm system?"
       ],
-      summary: "We do all those nerve-racking and brain-heavy-lifting works for you, just contact us now with a brief message about the issue."
+      summary: "We do all those nerve-racking works for you, just contact us now with a brief message about the issue."
     },
     contact: {
       title: "Contact",
@@ -183,7 +183,7 @@ const translations: Record<Language, Translations> = {
         "不信任云存储，想要将珍贵的文件、照片和视频自动备份到家中的私有驱动器（如 NAS）并具备磁盘冗余？或者搭建自己的媒体服务器？",
         "担心日益恶化的公共安全，想要安装家庭安防监控和报警系统？"
       ],
-      summary: "我们为您承担所有的技术重担 - 网络故障排查、VPN 创建和远程访问设置、Microsoft Office 365 办公软件部署，请立即联系我们。"
+      summary: "我们为承担所有这些令人头疼的工作，请立即联系我们并简要说明问题。"
     },
     contact: {
       title: "联系我们",
