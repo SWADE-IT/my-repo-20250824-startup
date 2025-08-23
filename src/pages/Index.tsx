@@ -107,7 +107,7 @@ const Index = () => {
                 Our Services
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Comprehensive IT services and solutions for your business and home
+                Practical IT services and solutions for small businesses and homes
               </p>
             </div>
             
