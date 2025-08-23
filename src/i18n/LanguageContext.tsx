@@ -150,7 +150,7 @@ const translations: Record<Language, Translations> = {
       highlights: {
         fast: "扎根社区",
         budget: "预算可控",
-        local: "本地服务",
+        local: "中文服务",
       },
       servicesOverview: {
         title: "服务类别",
