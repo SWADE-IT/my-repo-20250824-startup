@@ -71,7 +71,7 @@ const translations: Record<Language, Translations> = {
         "Uninterruptible Power Supply"
       ],
       officeDetails: [
-        "Want to assess business cyber security posture and implement proper security measures to protect against data breaches and cyber threats?",
+        "Worrying about rising risk of business loss and negative impact from cyber attack? Want to assess and implement proper security measures to protect against data breaches and cyber threats?",
         "Got a new employee and want to set up a computer for the employee?",
         "Want Office 365 deployment like Outlook email, Teams and group cloud drive?",
         "Want staff to be able to work from home or from anywhere securely access office resource via VPN secure tunnel?",
@@ -170,7 +170,7 @@ const translations: Record<Language, Translations> = {
         "家庭安防监控（CCTV）安装",
       ],
       officeDetails: [
-        "想要评估企业网络安全状况并实施适当的安全措施以防范数据泄露和网络威胁？",
+        "担心网络攻击造成业务损失和负面影响的风险不断上升？想要评估并实施适当的安全措施以防范数据泄露和网络威胁？",
         "招聘了新员工需要为其配置办公电脑？",
         "想部署 Office 365 包括 Outlook 邮箱、Teams 和共享云盘？",
         "想让员工能够安全地从家里或任何地方通过 VPN 安全隧道访问办公室资源？",
