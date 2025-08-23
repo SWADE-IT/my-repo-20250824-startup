@@ -145,7 +145,7 @@ const translations: Record<Language, Translations> = {
       hero: {
         title: "奥克兰小微企业与家庭 IT 支持",
         subtitle:
-          "网络故障排查、办公室 IT 系统部署、家庭 WIFI 和网络问题修复、家庭安防报警和监控解决方案",
+          "网络故障抢修、办公室 IT 系统部署、家庭 WIFI 和网络问题解决、家庭安防、警报器和监控解决方案",
       },
       highlights: {
         fast: "扎根社区",
