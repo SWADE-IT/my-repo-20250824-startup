@@ -142,7 +142,7 @@ const translations: Record<Language, Translations> = {
           "网络故障排查、办公室 IT 系统部署、家庭 WIFI 和网络问题修复、家庭安防报警和监控解决方案",
       },
       highlights: {
-        fast: "社区导向",
+        fast: "扎根社区",
         budget: "预算可控",
         local: "本地服务",
       },
