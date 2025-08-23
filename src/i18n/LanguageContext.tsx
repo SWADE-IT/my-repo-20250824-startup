@@ -66,6 +66,7 @@ const translations: Record<Language, Translations> = {
     },
     services: {
       title: "Services",
+      subtitle: "Professional IT solutions designed for Auckland businesses and residents",
       officeTitle: "Office IT Services",
       officeList: [
         "Cyber Security audit and remediation",
@@ -164,6 +165,7 @@ const translations: Record<Language, Translations> = {
     },
     services: {
       title: "服务项目",
+      subtitle: "专为小企业与家庭用户打造实用、专业的IT服务、解决方案与技术支持",
       officeTitle: "企业办公室 IT 服务",
       officeList: [
         "网络安全审计与修复",

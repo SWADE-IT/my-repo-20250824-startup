@@ -57,7 +57,7 @@ const Services = () => {
                 {t("services.title")}
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Professional IT solutions designed for Auckland businesses and residents
+                {t("services.subtitle")}
               </p>
             </div>
 
