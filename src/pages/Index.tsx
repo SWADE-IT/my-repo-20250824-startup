@@ -134,7 +134,7 @@ const Index = () => {
             </div>
             
             <div className="text-center mt-16">
-              <Button size="lg" variant="outline" asChild>
+              <Button size="lg" variant="golden" asChild>
                 <Link to="/services">{t("home.servicesOverview.viewAll")}</Link>
               </Button>
             </div>
