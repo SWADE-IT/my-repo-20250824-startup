@@ -56,6 +56,7 @@ const translations: Record<Language, Translations> = {
       servicesOverview: {
         title: "Our Services",
         subtitle: "Practical IT services and solutions for small businesses and homes",
+        viewAll: "View All Services",
       },
     },
     about: {
@@ -153,6 +154,7 @@ const translations: Record<Language, Translations> = {
       servicesOverview: {
         title: "服务类别",
         subtitle: "为小企业与个人用户提供实在、实用的IT服务与技术解决方案",
+        viewAll: "继续浏览服务细节->",
       },
     },
     about: {
