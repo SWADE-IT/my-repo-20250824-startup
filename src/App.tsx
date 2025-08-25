@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Layout from "./components/layout/Layout";
+import ScrollToTop from "./components/ScrollToTop";
 import { I18nProvider } from "./i18n/LanguageContext";
 import { HelmetProvider } from "react-helmet-async";
 
@@ -22,6 +23,7 @@ const App = () => (
       <HelmetProvider>
         <I18nProvider>
           <BrowserRouter>
+            <ScrollToTop />
             <Layout>
               <Routes>
                 <Route path="/" element={<Index />} />
