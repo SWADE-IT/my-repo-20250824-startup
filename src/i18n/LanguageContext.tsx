@@ -201,7 +201,7 @@ const translations: Record<Language, Translations> = {
     contact: {
       title: "联系我们",
       intro:
-        "电话繁忙时，请通过 WhatsApp 或微信留言详细说明您的情况，我们会安排最合适的技术专家第一时间查看您的问题并以最有效的方式回复您。",
+        "如果电话占线或或长时间无人接听，请通过 WhatsApp 或微信留言，并详细说明您的情况，以便我们为您安排该细分领域专家第一时间处理，缩短您的等待时间。",
       phone: "029 04 561 561",
       email: "admin@swade.co.nz",
       whatsapp: "WhatsApp",
