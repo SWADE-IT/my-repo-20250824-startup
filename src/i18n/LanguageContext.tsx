@@ -15,7 +15,7 @@ const translations: Record<Language, Translations> = {
   en: {
     common: {
       businessName: "SWADE IT",
-      slogan: "IT Is Life",
+      slogan: "IT IS LIFE",
       cta: {
         contact: "Get Support",
         learnMore: "Learn more",
@@ -114,7 +114,7 @@ const translations: Record<Language, Translations> = {
   zh: {
     common: {
       businessName: "SWADE IT",
-      slogan: "IT Is Life",
+      slogan: "IT IS LIFE",
       cta: {
         contact: "获取支持",
         learnMore: "了解更多",
