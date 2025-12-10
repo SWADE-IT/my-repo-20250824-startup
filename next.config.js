@@ -53,6 +53,9 @@ const nextConfig = {
   // 生产环境（部署到 GitHub）设置 basePath
   // 本地测试时不需要设置，直接用根路径
   //basePath: process.env.NODE_ENV === 'production' ? '/my-repo-20250824-startup' : '',
+  images: {
+    unoptimized: true,  
+  },
   trailingSlash: true,
 }
 
