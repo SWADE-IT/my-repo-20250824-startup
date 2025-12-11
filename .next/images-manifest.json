@@ -26,16 +26,15 @@
     "loaderFile": "",
     "domains": [],
     "disableStaticImages": false,
-    "minimumCacheTTL": 31536000,
+    "minimumCacheTTL": 60,
     "formats": [
-      "image/webp",
-      "image/avif"
+      "image/webp"
     ],
-    "dangerouslyAllowSVG": true,
-    "contentSecurityPolicy": "default-src 'self'; script-src 'none'; sandbox;",
+    "dangerouslyAllowSVG": false,
+    "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;",
     "contentDispositionType": "attachment",
     "remotePatterns": [],
-    "unoptimized": false,
+    "unoptimized": true,
     "sizes": [
       640,
       750,

@@ -3,14 +3,24 @@
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useI18n } from "@/app/lib/i18n-context";
 import MainLayout from '@/components/layout/main-layout'
 import LazySection from '@/app/components/performance/lazy-section'
 
 export default function HomeClient() {
   const heroRef = useRef<HTMLElement>(null);
+  const pathname = usePathname();
   const { t, tv } = useI18n();
-  
+
+  // Get current locale from pathname
+  const currentLocale = pathname.split('/')[1] || 'en';
+  const localePrefix = `/${currentLocale}`;
+
+  const getLocalizedPath = (path: string) => {
+    return path === '/' ? localePrefix : `${localePrefix}${path}`;
+  };
+
   useEffect(() => {
     const hero = heroRef.current;
     if (!hero) return;
@@ -50,17 +60,17 @@ export default function HomeClient() {
                   {t("home.hero.subtitle")}
                 </p>
               </div>
-              
+
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button size="lg" variant="default" asChild>
-                  <Link href="/contact">{t("common.cta.contact")}</Link>
+                  <Link href={getLocalizedPath("/contact")}>{t("common.cta.contact")}</Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link href="/services">{t("common.cta.learnMore")}</Link>
+                  <Link href={getLocalizedPath("/services")}>{t("common.cta.learnMore")}</Link>
                 </Button>
               </div>
-              
+
               {/* Highlights */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
                 <div className="p-8 bg-card border border-border shadow-premium">
@@ -79,7 +89,7 @@ export default function HomeClient() {
       </section>
 
       {/* Services Overview */}
-      <LazySection 
+      <LazySection
         className="section-spacing bg-gradient-surface"
         fallback={
           <div className="section-spacing bg-gradient-surface">
@@ -109,7 +119,7 @@ export default function HomeClient() {
                   {t("home.servicesOverview.subtitle")}
                 </p>
               </div>
-              
+
               <div className="grid gap-12 md:grid-cols-2">
                 <div className="p-10 bg-card border border-border shadow-card">
                   <h3 className="text-2xl font-medium mb-8 text-foreground">{t("services.officeTitle")}</h3>
@@ -122,7 +132,7 @@ export default function HomeClient() {
                     ))}
                   </ul>
                 </div>
-                
+
                 <div className="p-10 bg-card border border-border shadow-card">
                   <h3 className="text-2xl font-medium mb-8 text-foreground">{t("services.homeTitle")}</h3>
                   <ul className="space-y-6">
@@ -135,10 +145,10 @@ export default function HomeClient() {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="text-center mt-16">
                 <Button size="lg" variant="default" asChild>
-                  <Link href="/services">{t("home.servicesOverview.viewAll")}</Link>
+                  <Link href={getLocalizedPath("/services")}>{t("home.servicesOverview.viewAll")}</Link>
                 </Button>
               </div>
             </div>
