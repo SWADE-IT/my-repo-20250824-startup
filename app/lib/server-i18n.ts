@@ -21,12 +21,12 @@ const translations: Record<Language, Record<string, any>> = {
       contact: "Contact",
     },
     seo: {
-      homeTitle: "SWADE IT — Auckland IT Services | Office 365, VPN, Home Networks",
+      homeTitle: "SWADE IT - Auckland IT Services I  Comprehensive Office IT support and solutions",
       homeDesc:
-        "Fast, professional IT help in Auckland: Office 365, VPN remote work, email, and home network troubleshooting.",
-      aboutTitle: "About SWADE IT — Auckland Small Business & Home IT Support",
+        "Fast, professional IT help in Auckland: Web design, Software development, Network troubleshooting,  office IT system setup, Cyber Security audit, as well as IT infrastructure solutions, including UPS, rack, PDU, and remote monitoring software.",
+      aboutTitle: "About SWADE IT — Auckland IT Services I  Comprehensive Office IT support and solutions",
       aboutDesc:
-        "Over 10 years helping Auckland small businesses and homes with urgent, budget-friendly IT support.",
+        "Fast, professional IT help in Auckland: Web design, Software development, Network troubleshooting,  office IT system setup, Cyber Security audit, as well as IT infrastructure solutions, including UPS, rack, PDU, and remote monitoring software.",
       servicesTitle: "IT Services — Office 365, VPN, Email, Home WiFi & CCTV | SWADE IT",
       servicesDesc:
         "Office IT services and residential support: 365 deployment, Outlook, VPN, networks, WiFi, CCTV.",
@@ -72,11 +72,11 @@ export function getServerTranslation(key: string, lang: Language = 'en'): string
   const dict = translations[lang] || translations.en;
   const parts = key.split(".");
   let cur: any = dict;
-  
+
   for (const part of parts) {
     cur = cur?.[part];
   }
-  
+
   if (typeof cur === "string") return cur;
   return Array.isArray(cur) ? cur.join(", ") : String(cur ?? key);
 }

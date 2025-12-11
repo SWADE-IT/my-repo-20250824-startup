@@ -4,7 +4,7 @@ import './globals.css'
 import { Providers } from './providers'
 import { Suspense } from 'react'
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     locale: 'en_NZ',
     url: 'https://swade.co.nz',
     siteName: 'SWADE IT',
-    title: 'SWADE IT — Auckland IT Services | Office 365, VPN, Home Networks',
-    description: 'Fast, professional IT help in Auckland: Office 365, VPN remote work, email, and home network troubleshooting.',
+    title: 'SWADE IT - Auckland IT Services I  Comprehensive Office IT support and solutions',
+    description: 'Fast, professional IT help in Auckland: Web design, Software development, Network troubleshooting,  office IT system setup, Cyber Security audit, as well as IT infrastructure solutions, including UPS, rack, PDU, and remote monitoring software.',
     images: [
       {
         url: '/lovable-uploads/31d1ca4d-93b5-4a86-b8a7-a1382f37622f.png',
@@ -74,16 +74,16 @@ export default function RootLayout({
         {/* Preconnect to external domains for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+
         {/* DNS prefetch for performance */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-        
+
         {/* Preload critical resources */}
-        <link 
-          rel="preload" 
-          href="/lovable-uploads/31d1ca4d-93b5-4a86-b8a7-a1382f37622f.png" 
-          as="image" 
+        <link
+          rel="preload"
+          href="/lovable-uploads/31d1ca4d-93b5-4a86-b8a7-a1382f37622f.png"
+          as="image"
           type="image/png"
         />
       </head>

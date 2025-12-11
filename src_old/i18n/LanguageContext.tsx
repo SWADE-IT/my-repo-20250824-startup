@@ -29,12 +29,12 @@ const translations: Record<Language, Translations> = {
       contact: "Contact",
     },
     seo: {
-      homeTitle: "SWADE IT — Auckland IT Services | Office 365, VPN, Home Networks",
+      homeTitle: "SWADE IT - Auckland IT Services I  Comprehensive Office IT support and solutions",
       homeDesc:
-        "Fast, professional IT help in Auckland: Office 365, VPN remote work, email, and home network troubleshooting.",
-      aboutTitle: "About SWADE IT — Auckland Small Business & Home IT Support",
+        "Fast, professional IT help in Auckland: Web design, Software development, Network troubleshooting,  office IT system setup, Cyber Security audit, as well as IT infrastructure solutions, including UPS, rack, PDU, and remote monitoring software.",
+      aboutTitle: "About SWADE IT — Auckland IT Services I  Comprehensive Office IT support and solutions",
       aboutDesc:
-        "Over 10 years helping Auckland small businesses and homes with urgent, budget-friendly IT support.",
+        "Fast, professional IT help in Auckland: Web design, Software development, Network troubleshooting,  office IT system setup, Cyber Security audit, as well as IT infrastructure solutions, including UPS, rack, PDU, and remote monitoring software.",
       servicesTitle: "IT Services — Office 365, VPN, Email, Home WiFi & CCTV | SWADE IT",
       servicesDesc:
         "Office IT services and residential support: 365 deployment, Outlook, VPN, networks, WiFi, CCTV.",
@@ -72,7 +72,7 @@ const translations: Record<Language, Translations> = {
         "Cyber Security audit and remediation",
         "New employee computer setup",
         "Microsoft Office 365 Deployment",
-        "VPN secure remote work access setup", 
+        "VPN secure remote work access setup",
         "NAS and Private Cloud establishment",
         "Uninterruptible Power Supply"
       ],
@@ -87,7 +87,7 @@ const translations: Record<Language, Translations> = {
       homeTitle: "Personal & Residential Services",
       homeList: [
         "Internet connection troubleshooting",
-        "WiFi range extension", 
+        "WiFi range extension",
         "NAS for private auto-backup of precious photos/videos",
         "CCTV and home security alarm system solution"
       ],
@@ -260,7 +260,7 @@ export function useI18n() {
     // Return a fallback context to prevent crashes
     return {
       lang: "en" as Language,
-      setLang: () => {},
+      setLang: () => { },
       t: (key: string) => key,
       tv: (key: string) => key
     };
