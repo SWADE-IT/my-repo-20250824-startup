@@ -30,7 +30,12 @@ export default function ServicesClient() {
     "/assets/service-microsoft-365.png",
     "/assets/service-vpn-setup.png",
     "/assets/service-nas-cloud.png",
-    "/assets/service-ups-power.png"
+    "/assets/service-ups-power.png",
+    "/assets/service-website-design.png",
+    "/assets/service-ai-solutions.png",
+    "/assets/service-fullstack-dev.png",
+    "/assets/service-devops-cloud.png",
+    "/assets/service-live-streaming.png"
   ];
 
   const homeImages = [

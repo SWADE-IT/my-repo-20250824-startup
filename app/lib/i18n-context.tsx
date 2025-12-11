@@ -74,9 +74,14 @@ const translations: Record<Language, Translations> = {
         "Cyber Security audit and remediation",
         "New employee computer setup",
         "Microsoft Office 365 Deployment",
-        "VPN secure remote work access setup", 
+        "VPN secure remote work access setup",
         "NAS and Private Cloud establishment",
-        "Uninterruptible Power Supply"
+        "Uninterruptible Power Supply",
+        "Business Website design, site maintenance and optimisation",
+        "AI Solutions - RAG systems, intelligent chatbots, autonomous agents",
+        "Full-stack custom software development",
+        "Docker containerization, Terraform IaC, Azure/AWS deployment, CI/CD automation",
+        "Live streaming services and platform building"
       ],
       officeDetails: [
         "Worrying about rising risk of business loss and negative impact from cyber attack? Want to assess and implement proper security measures to protect against data breaches and cyber threats?",
@@ -84,12 +89,17 @@ const translations: Record<Language, Translations> = {
         "Want modern digital tools for better team collaboration to improve employees productivity like Office 365 deployment, Outlook email, Teams video meeting with clients and SharePoint for easy share files securely?",
         "Want staff to be able to work from home or from anywhere securely access office resource via VPN secure tunnel?",
         "Don't want to use public cloud drive but want to build private storage or office shared drive with modern NAS and data protection? Or even with Geo-redundancy remotely backup the data everyday to a different place?",
-        "Want a UPS to keep critical devices like WIFI router or servers remain in service even if a power outage happen?"
+        "Want a UPS to keep critical devices like WIFI router or servers remain in service even if a power outage happen?",
+        "Need a professional business website to establish your online presence? Want ongoing maintenance, SEO optimization, and performance improvements to attract more customers and rank higher in search results?",
+        "Looking to leverage AI to automate customer support, build intelligent chatbots, implement RAG (Retrieval-Augmented Generation) systems for knowledge management, or deploy autonomous agents to streamline business processes?",
+        "Need custom software tailored to your unique business requirements? Want a web application, mobile app, or internal system built from scratch with modern technologies and best practices?",
+        "Want to modernize your infrastructure with containerization? Need automated deployment pipelines, infrastructure as code, and cloud hosting on Azure or AWS for scalability and reliability?",
+        "Planning to launch live streaming for events, webinars, or online courses? Need a custom streaming platform with chat, recording, and multi-platform distribution capabilities?"
       ],
       homeTitle: "Personal & Residential Services",
       homeList: [
         "Internet connection troubleshooting",
-        "WiFi range extension", 
+        "WiFi range extension",
         "NAS for private auto-backup of precious photos/videos",
         "CCTV and home security alarm system solution"
       ],
@@ -175,7 +185,12 @@ const translations: Record<Language, Translations> = {
         "Microsoft Office 365 部署",
         "VPN 安全远程办公访问设置",
         "NAS 和私有云建立",
-        "不间断电源"
+        "不间断电源",
+        "商业网站设计、维护与优化",
+        "AI 解决方案 - RAG 系统、智能聊天机器人、自主代理",
+        "全栈定制软件开发",
+        "Docker 容器化、Terraform IaC、Azure/AWS 部署、CI/CD 自动化",
+        "直播服务与平台搭建"
       ],
       officeDetails: [
         "从来没有做过网络安全检测？担心公司IT系统受到网络安全威胁、可能造成生意停止运作？担心受攻击后客户信息泄露对公司口碑造成负面影响？想要评估并实施适当的安全措施以防范数据泄露和网络威胁？",
@@ -183,7 +198,12 @@ const translations: Record<Language, Translations> = {
         "想要部署现代化IT工具如 Office 365、客户视频会议和、SharePoint 安全文件共享等来提高团队协作和员工的工作效率？",
         "想让自己或员工能够安全地居家办公或从任何地方办公、并安全的访问办公资源、避免内部商业数据因通过简单、非加密通道传输而遭泄露？",
         "不想使用公有云盘，而想建立办公室内部私有的、带冗余备份的共享盘？甚至能异地冗余、自动同步新的数据到远程、实时异地备份？",
-        "想要重要IT设备如服务器、WIFI 路由器在突然停电的情况下依然持续运行、避免设备损坏、数据丢失、或降低对业务影响？"
+        "想要重要IT设备如服务器、WIFI 路由器在突然停电的情况下依然持续运行、避免设备损坏、数据丢失、或降低对业务影响？",
+        "需要专业的商业网站来建立线上形象？想要持续维护、SEO 优化和性能改进，以吸引更多客户并在搜索结果中排名更高？",
+        "希望利用 AI 自动化客户支持、构建智能聊天机器人、实施 RAG（检索增强生成）系统进行知识管理，或部署自主代理来简化业务流程？",
+        "需要根据您独特的业务需求定制软件？想要使用现代技术和最佳实践从零开始构建 Web 应用、移动应用或内部系统？",
+        "想要通过容器化实现基础设施现代化？需要自动化部署流程、基础设施即代码，以及在 Azure 或 AWS 上的云托管以实现可扩展性和可靠性？",
+        "计划为活动、网络研讨会或在线课程启动直播？需要具有聊天、录制和多平台分发功能的定制流媒体平台？"
       ],
       homeTitle: "个人与家庭服务",
       homeList: [
@@ -216,16 +236,16 @@ const translations: Record<Language, Translations> = {
 
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
-export const I18nProvider: React.FC<{ 
-  children: React.ReactNode; 
-  initialLocale?: string 
+export const I18nProvider: React.FC<{
+  children: React.ReactNode;
+  initialLocale?: string
 }> = ({ children, initialLocale }) => {
   const [lang, setLang] = useState<Language>(() => {
     // Use initialLocale from server if provided
     if (initialLocale && ['en', 'zh'].includes(initialLocale)) {
       return initialLocale as Language;
     }
-    
+
     if (typeof window !== 'undefined') {
       try {
         return (localStorage.getItem("lang") as Language) || "en";
@@ -275,7 +295,7 @@ export function useI18n() {
     // Return a fallback context to prevent crashes
     return {
       lang: "en" as Language,
-      setLang: () => {},
+      setLang: () => { },
       t: (key: string) => key,
       tv: (key: string) => key
     };
